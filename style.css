@@ -1,0 +1,73 @@
+body {
+    overflow: hidden;
+    transition: 1000ms all;
+    background-image: linear-gradient(none);
+    background-color: rgb(3, 174, 226) !important;
+}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+
+@media screen and (max-width: 600px) {
+    body {
+        background-image: linear-gradient(none);
+        background-color: rgb(3, 174, 226) !important;
+    }
+    #salam {
+        padding: 30px 39px;
+    }
+
+    .main-text {
+        margin-top: 100px ;
+        font-size: 4.2rem !important;
+    }
+
+}
+
+
+
+button {
+    padding: 10px 15px;
+    border-radius: 50px;
+    outline: 0;
+    font-family: monospace;
+    border: 0;
+    cursor: pointer;
+    font-size: 2rem;
+    position: fixed;
+    right: 10px;
+    transition: 1000ms all;
+    top: 10px;
+}
+
+#myAudio {
+    opacity: 1; 
+    margin-left: -400px;
+}
+
+.container {
+    width: 1300px;
+    margin: 0 auto;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1000px;
+    overflow: hidden;
+}
+.main-text {
+    font-size: 3.3em;
+    color: white;
+    margin-left: 2000px;
+    /* animation-name: salam; */
+    transition: 2000ms all;
+    animation-duration: 2s;
+    font-family: 'Raleway', sans-serif;
+    animation-delay: 200ms;
+}
+
+@keyframes salam {
+    0% { margin-left: 2000px; transform: rotateY(-90deg);}
+    25% { transform: rotateY(90deg); font-size: 1.9em;}
+    50% { transform: rotateZ(0deg); font-size: 3em;}
+    100% { margin-left: 0; font-size: 3.4em;}
+}
